@@ -1,0 +1,27 @@
+{
+	"name": "sanitypress-utils",
+	"version": "0.0.1",
+	"description": "Utility functions and helpers for Sanity and SanityPress",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc && tsc-alias",
+		"watch": "concurrently \"tsc -w\" \"tsc-alias -w\""
+	},
+	"author": "Mitchell Christ <mitchell@nuotsu.dev>",
+	"license": "ISC",
+	"dependencies": {
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-icons": "^5.5.0",
+		"sanity": "^3.78.0"
+	},
+	"devDependencies": {
+		"@types/node": "^22.13.9",
+		"@types/react": "^19.0.10",
+		"@types/react-dom": "^19.0.4",
+		"tsc-alias": "^1.8.11",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.7.3",
+		"concurrently": "^8.2.0"
+	}
+}
