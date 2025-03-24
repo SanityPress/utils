@@ -10,7 +10,7 @@ export const directory = (
 		.schemaType('page')
 		.child(
 			S.documentList()
-				.id(`page.${path.replace(/\//, '-')}`)
+				.id(`page.${path.replaceAll('/', '-')}`)
 				.filter(
 					`
 					string::startsWith(metadata.slug.current, $path)

@@ -1,6 +1,6 @@
 {
 	"name": "sanitypress-utils",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Utility functions and helpers for Sanity and SanityPress",
 	"main": "dist/index.js",
 	"scripts": {
