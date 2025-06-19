@@ -13,7 +13,8 @@ export const directory = (
 				.id(`page.${path.replaceAll('/', '-')}`)
 				.filter(
 					`
-					string::startsWith(metadata.slug.current, $path)
+					metadata.slug.current == $path
+					&& string::startsWith(metadata.slug.current, $path)
 					${maxLevel !== undefined ? `&& count(string::split(metadata.slug.current, '/')) <= ${maxLevel + 1}` : ''}
 				`,
 				)
